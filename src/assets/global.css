@@ -1,0 +1,70 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'GrilledCheese BTN';
+    src: url('../../public/fonts/GrilledCheeseBTN.woff2') format('woff2'),
+        url('../../public/fonts/GrilledCheeseBTN.woff') format('woff'),
+        url('../../public/fonts/GrilledCheeseBTN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Variables */
+:root {
+    --primary: #CC215B;
+    --secondary: #3E9EC7;
+    --text: #5A3E14;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+body {
+    background: linear-gradient(100.17deg, #F9AB34 4.57%, #FFE68E 94.51%);
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-family: "GrilledCheese BTN";
+    font-size: 35px;
+    color: var(--text);
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: "GrilledCheese BTN";
+    font-size: 21px;
+    color: var(--text);
+    text-transform: uppercase;
+}
+p {
+    color: var(--text);
+}
+
+/* Buttons */
+button {
+    font-family: "GrilledCheese BTN";
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    margin: 10px auto;
+    padding: 15px 0;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid var(--primary);
+}
+.btn-solid {
+    color: white;
+    background: var(--primary);
+}
+.btn-outline {
+    color: var(--primary);
+}
