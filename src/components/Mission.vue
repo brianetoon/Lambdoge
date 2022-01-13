@@ -12,6 +12,6 @@ export default {
 
 <style>
 #mission {
-    height: 30vh;
+    height: 50vh;
 }
 </style>

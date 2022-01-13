@@ -95,6 +95,7 @@ nav li {
 nav a {
     color: var(--lambdoge);
     text-decoration: none;
+    cursor: pointer;
 }
 nav a:hover {
     color: white;

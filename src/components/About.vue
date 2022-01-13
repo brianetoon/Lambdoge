@@ -12,6 +12,6 @@ export default {
 
 <style>
 #about {
-    height: 30vh;
+    height: 50vh;
 }
 </style>
