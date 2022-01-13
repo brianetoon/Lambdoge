@@ -1,7 +1,7 @@
 <template>
-    <div id="comic">
+    <section id="comic">
         <h2>Read The Comic</h2>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+#comic {
+    height: 30vh;
+}
 </style>

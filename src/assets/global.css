@@ -15,6 +15,7 @@
 :root {
     --primary: #CC215B;
     --secondary: #3E9EC7;
+    --lambdoge: #FADE8E;
     --text: #5A3E14;
 }
 
@@ -46,6 +47,14 @@ h3 {
 }
 p {
     color: var(--text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Buttons */
@@ -63,6 +72,7 @@ button {
 }
 .btn-solid {
     color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     background: var(--primary);
 }
 .btn-outline {
