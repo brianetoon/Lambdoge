@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <div class="navbar">
+    <div class="mobile-nav">
+        <div class="nav-content">
             <img src="@/assets/images/logo.png" class="logo">
             <div class="nav-toggle">
                 <img src="@/assets/icons/close.svg" class="close"
@@ -10,8 +10,8 @@
             </div>
         </div>
 
-        <NavLinks class="dropdown" />
-    </header>
+        <NavLinks class="dropdown" :offset="340" />
+    </div>
 </template>
 
 <script>
@@ -24,6 +24,7 @@ export default {
     components: { NavLinks },
     setup() {
         const showingDropdown = ref(false)
+        // const offset = ref(340)
 
         const openDropdown = () => {
             animateDropdown.play()
@@ -51,21 +52,13 @@ export default {
 </script>
 
 <style>
-header {
-    padding: 0 10px;
-    background: var(--primary);
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-}
-.navbar {
+.mobile-nav .nav-content {
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.logo {
+.mobile-nav .logo {
     width: 220px;
     position: absolute;
     left: 50%;
@@ -78,9 +71,6 @@ header {
     cursor: pointer;
     width: 44px;
 }
-.nav-links {
-    padding: 10px 0 24px;
-}
 nav.dropdown {
     background: var(--primary);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
@@ -89,15 +79,10 @@ nav.dropdown {
     width: 100%;
     left: 0;
 }
-nav li {
+nav.dropdown .nav-links {
+    padding: 10px 0 24px;
+}
+nav.dropdown li {
     padding: 12px 0;
-}
-nav a {
-    color: var(--lambdoge);
-    text-decoration: none;
-    cursor: pointer;
-}
-nav a:hover {
-    color: white;
 }
 </style>

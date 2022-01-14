@@ -1,15 +1,10 @@
 <template>
     <nav>
         <ul class="nav-links">
-            <!-- <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#comic">Comic & NFT</a></li>
-            <li><a @click="scrollTest">Tokenomics</a></li> -->
-
             <li v-for="(link, i) in links" :key="i">
                 <a @click="scrollTest(link.anchor)">{{ link.name }}</a>
             </li>
+            <li class="ldoge"><a href="#">Buy $LDOGE</a></li>
         </ul>
     </nav>
 </template>
@@ -20,7 +15,8 @@ import ScrollToPlugin from 'gsap/ScrollToPlugin.js'
 import { ref } from '@vue/runtime-core'
 
 export default {
-    setup() {
+    props: ['offset'],
+    setup(props) {
         const links = ref([
             { name: 'Home', anchor: '#hero'},
             { name: 'About', anchor: '#about'},
@@ -32,8 +28,7 @@ export default {
         gsap.registerPlugin(ScrollToPlugin)
 
         const scrollTest = (anchor) => {
-            gsap.to(window, {duration:.5, scrollTo:{y: anchor, offsetY: 340}})
-            // console.log(anchor)
+            gsap.to(window, {duration:.5, scrollTo:{y: anchor, offsetY: props.offset}})
         }
 
         return { links, scrollTest }
@@ -42,5 +37,23 @@ export default {
 </script>
 
 <style>
-
+.ldoge {
+    display: none;
+}
+.ldoge a {
+    color: var(--primary);
+    background: var(--lambdoge);
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+.ldoge a:hover {
+    color: var(--primary);
+    background: white;
+}
+@media screen and (min-width: 1200px) {
+    .ldoge {
+        display: block;
+    }
+}
 </style>

@@ -79,3 +79,10 @@ button {
 .btn-outline {
     color: var(--primary);
 }
+
+/* Media Queries */
+@media screen and (min-width: 960px) {
+    body {
+        background: radial-gradient(37.19% 146.49% at 45.98% 49%, #FFE68E 0%, #F9AB34 100%);
+    }
+}
