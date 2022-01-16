@@ -22,6 +22,11 @@ export default {
 
 <style>
 main {
-    padding: 10px;
+    padding: 15px;
+}
+@media screen and (min-width: 680px) {
+    main {
+        padding: 30px;
+    }
 }
 </style>

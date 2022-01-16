@@ -57,14 +57,14 @@ ul {
     padding: 0;
 }
 
-/* Buttons */
+/* Buttons & Icons */
 button {
     font-family: "GrilledCheese BTN";
     font-size: 18px;
     display: block;
     width: 100%;
     max-width: 340px;
-    margin: 10px auto;
+    margin: 15px auto;
     padding: 15px 0;
     border-radius: 50px;
     background: none;
@@ -79,10 +79,40 @@ button {
 .btn-outline {
     color: var(--primary);
 }
+.icon:hover {
+    transform: scale(1.1);
+}
 
 /* Media Queries */
+@media screen and (min-width: 680px) {
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+
 @media screen and (min-width: 960px) {
     body {
         background: radial-gradient(37.19% 146.49% at 45.98% 49%, #FFE68E 0%, #F9AB34 100%);
+    }
+    h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-size: 55px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 18px;
     }
 }

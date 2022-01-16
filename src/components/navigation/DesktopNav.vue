@@ -4,8 +4,12 @@
             <img src="@/assets/images/logo.png" class="logo">
             <NavLinks :offset="100" />
             <div class="icon-buttons">
-                <img src="@/assets/icons/telegram_yellow.svg" class="icon">
-                <img src="@/assets/icons/telegram_yellow.svg" class="icon">
+                <a href="https://t.me/lambdoge" target="_blank">
+                    <img src="@/assets/icons/telegram_yellow.svg" class="icon">
+                </a>
+                <a href="https://twitter.com/lambdoge" target="_blank">
+                    <img src="@/assets/icons/twitter_yellow.svg" class="icon">
+                </a>
             </div>
         </div>
     </div>

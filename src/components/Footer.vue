@@ -4,8 +4,12 @@
             <img src="@/assets/images/logo.png" class="logo">
             <p class="copyright">&copy; 2022 LambDoge</p>
             <div class="icon-buttons">
-                <img src="@/assets/icons/telegram_blue.svg" class="icon">
-                <img src="@/assets/icons/telegram_blue.svg" class="icon">
+                <a href="https://t.me/lambdoge" target="_blank">
+                    <img src="@/assets/icons/telegram_blue.svg" class="icon">
+                </a>
+                <a href="https://twitter.com/lambdoge" target="_blank">
+                    <img src="@/assets/icons/twitter_blue.svg" class="icon">
+                </a>    
             </div>
         </div>
     </footer>
@@ -31,6 +35,5 @@ footer .logo {
 footer .icon {
     width: 42px;
     margin: 0 12px;
-    cursor: pointer;
 }
 </style>
