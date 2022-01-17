@@ -33,7 +33,6 @@ footer .logo {
     margin: 20px 0 30px;
 }
 footer .icon {
-    width: 42px;
     margin: 0 12px;
 }
 </style>

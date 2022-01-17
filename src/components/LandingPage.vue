@@ -22,11 +22,13 @@ export default {
 
 <style>
 main {
-    padding: 15px;
+    padding: 10px 25px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 @media screen and (min-width: 680px) {
     main {
-        padding: 30px;
+        padding: 20px 30px;
     }
 }
 </style>

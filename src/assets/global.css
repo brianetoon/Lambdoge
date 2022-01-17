@@ -51,6 +51,9 @@ p {
     font-size: 16px;
     line-height: 28px;
 }
+a {
+    text-decoration: none;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -58,7 +61,7 @@ ul {
 }
 
 /* Buttons & Icons */
-button {
+button, .button {
     font-family: "GrilledCheese BTN";
     font-size: 18px;
     display: block;
@@ -70,6 +73,7 @@ button {
     background: none;
     border: 2px solid var(--primary);
     cursor: pointer;
+    transition: transform 0.25s;
 }
 .btn-solid {
     color: white;
@@ -79,8 +83,26 @@ button {
 .btn-outline {
     color: var(--primary);
 }
+button:hover, .button:hover {
+    transform: scale(1.06);
+}
+.icon {
+    width: 42px;
+    transition: transform 0.25s;
+}
 .icon:hover {
     transform: scale(1.1);
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+.grid-item {
+    grid-column: span 12;
 }
 
 /* Media Queries */
@@ -90,6 +112,16 @@ button {
     }
     p {
         font-size: 17px;
+    }
+    .grid {
+        gap: 25px;
+        margin: 40px auto;
+    }
+    .grid-item {
+        grid-column: span 6;
+    }
+    .grid-item:last-child {
+        grid-column: 4/10;
     }
 }
 
@@ -102,6 +134,12 @@ button {
     }
     h3 {
         font-size: 24px;
+    }
+    .grid-item {
+        grid-column: span 4;
+    }
+    .grid-item:last-child {
+        grid-column: 9/13;
     }
 }
 

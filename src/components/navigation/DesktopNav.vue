@@ -2,7 +2,9 @@
     <div class="desktop-nav">
         <div class="nav-content">
             <img src="@/assets/images/logo.png" class="logo">
-            <NavLinks :offset="100" />
+            
+            <NavLinks />
+
             <div class="icon-buttons">
                 <a href="https://t.me/lambdoge" target="_blank">
                     <img src="@/assets/icons/telegram_yellow.svg" class="icon">

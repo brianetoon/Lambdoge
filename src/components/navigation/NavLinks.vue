@@ -4,7 +4,11 @@
             <li v-for="(link, i) in links" :key="i">
                 <a @click="scrollTest(link.anchor)">{{ link.name }}</a>
             </li>
-            <li class="ldoge"><a href="#">Buy $LDOGE</a></li>
+            <li class="ldoge">
+                <a href="https://rocketswap.exchange/#/swap/con_lambdoge" target="_blank">
+                    Buy $LDOGE
+                </a>
+            </li>
         </ul>
     </nav>
 </template>
@@ -15,8 +19,7 @@ import ScrollToPlugin from 'gsap/ScrollToPlugin.js'
 import { ref } from '@vue/runtime-core'
 
 export default {
-    props: ['offset'],
-    setup(props) {
+    setup(props, { emit }) {
         const links = ref([
             { name: 'Home', anchor: '#hero'},
             { name: 'About', anchor: '#about'},
@@ -25,10 +28,14 @@ export default {
             { name: 'Tokenomics', anchor: '#tokenomics'},
         ])
 
+        const close = () => {
+            emit('close')
+        }
+
         gsap.registerPlugin(ScrollToPlugin)
 
         const scrollTest = (anchor) => {
-            gsap.to(window, {duration:.5, scrollTo:{y: anchor, offsetY: props.offset}})
+            gsap.to(window, {duration:.5, scrollTo:{y: anchor, offsetY: 100}, onComplete:close})
         }
 
         return { links, scrollTest }

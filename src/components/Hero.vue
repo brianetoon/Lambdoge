@@ -4,8 +4,12 @@
         <h2>Comic Books For <br> Us, By Us</h2>
         <p>A comic book series that is written by, voted on and enjoyed by the LambDoge community.</p>
         <div class="buttons">
-            <button class="btn-solid">Read Comics</button>
-            <button class="btn-outline">Buy $LDOGE</button>
+            <a href="#" class="button btn-solid">
+                Read Comics
+            </a>
+            <a href="https://rocketswap.exchange/#/swap/con_lambdoge" target="_blank" class="button btn-outline">
+                Buy $LDOGE
+            </a>
         </div>
     </section>
 </template>
@@ -45,7 +49,7 @@ export default {
         max-width: 500px;
         margin: 10px auto;
     }
-    #hero button {
+    #hero .button {
         margin: 15px 10px;
     }
     br {

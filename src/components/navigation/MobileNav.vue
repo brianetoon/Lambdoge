@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        <NavLinks class="dropdown" :offset="340" />
+        <NavLinks class="dropdown" @close="closeDropdown" />
     </div>
 </template>
 
@@ -24,7 +24,6 @@ export default {
     components: { NavLinks },
     setup() {
         const showingDropdown = ref(false)
-        // const offset = ref(340)
 
         const openDropdown = () => {
             animateDropdown.play()
