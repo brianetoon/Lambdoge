@@ -7,7 +7,7 @@
             <h3>{{ card.title }}</h3>
             <p>{{ card.details }}</p>
         </div>
-        <a :href="card.href" class="button btn-solid">
+        <a :href="card.href" class="button btn-solid" target="_blank">
             {{ card.button_text }}
         </a>
     </div>

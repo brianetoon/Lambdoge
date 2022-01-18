@@ -59,14 +59,23 @@ ul {
     margin: 0;
     padding: 0;
 }
+section {
+    margin: 10px auto 100px;
+}
+.underline {
+    text-decoration: underline;
+}
+.sub-text {
+    font-size: 0.9em;
+}
 
 /* Buttons & Icons */
-button, .button {
+.button {
     font-family: "GrilledCheese BTN";
     font-size: 18px;
     display: block;
     width: 100%;
-    max-width: 340px;
+    max-width: 320px;
     margin: 15px auto;
     padding: 15px 0;
     border-radius: 50px;
@@ -83,8 +92,11 @@ button, .button {
 .btn-outline {
     color: var(--primary);
 }
-button:hover, .button:hover {
-    transform: scale(1.06);
+.btn-disabled {
+    cursor: not-allowed;
+}
+.button:hover {
+    transform: scale(1.05);
 }
 .icon {
     width: 42px;
@@ -92,6 +104,9 @@ button:hover, .button:hover {
 }
 .icon:hover {
     transform: scale(1.1);
+}
+.btn-disabled:hover {
+    transform: none;
 }
 
 /* Grid */

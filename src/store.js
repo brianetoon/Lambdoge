@@ -14,7 +14,7 @@ export default {
             image: 'unicorn_ldoge.svg',
             details: 'Once the winning storyline is voted on by the community, the comic will be professionally illustrated and minted as an NFT for purchase. Every chapter will have a few variant covers with different rarities.',
             button_text: 'Read Comics',
-            href: '#'
+            href: 'https://opensea.io/lambdoge'
         },
         { 
             id: 3, 
@@ -22,7 +22,7 @@ export default {
             image: 'creepy_ldoge.svg',
             details: 'We want to share our creations with the community. Lambodge is our mascot and we want to show them them off in every shape and form. Own a piece of LambDoge.',
             button_text: 'NFT Marketplace',
-            href: '#'
+            href: 'https://opensea.io/lambdoge'
         }
     ]
 }

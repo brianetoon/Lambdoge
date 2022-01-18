@@ -10,7 +10,7 @@
             </div>
         </div>
 
-        <NavLinks class="dropdown" @close="closeDropdown" />
+        <NavLinks class="dropdown" @close="closeDropdown" :offset="100" />
     </div>
 </template>
 
@@ -39,9 +39,9 @@ export default {
         onMounted(() => {
             gsap.set('.dropdown', {scaleY:0})
             gsap.set('.dropdown li', {opacity:0, scale:0.2})
-            animateDropdown = gsap.timeline({paused:true, defaults:{duration:0.4}})
-                .to('.dropdown', {scaleY:1, ease:'back'})
-                .to('.dropdown li', {scale:1, opacity:1}, '-=0.1')
+            animateDropdown = gsap.timeline({paused:true})
+                .to('.dropdown', {scaleY:1, duration:0.3, ease:'back'})
+                .to('.dropdown li', {scale:1, duration:0.3, opacity:1}, '-=0.2')
         })
 
         return { showingDropdown, openDropdown, closeDropdown }

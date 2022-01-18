@@ -10,8 +10,8 @@
                 v-for="(comic, i) in comics" :key="i" class="grid-item">
         </div>
         <div class="buttons">
-            <a href="#" class="button btn-solid">
-                Read More Comics
+            <a href="https://opensea.io/lambdoge" target="_blank" class="button btn-solid">
+                Read Comics
             </a>
             <a href="https://t.me/lambdoge" target="_blank" class="button btn-outline">
                 Join the fun on Telegram
@@ -33,18 +33,19 @@ export default {
 
 <style>
 #mission {
-    margin: 10px 0 100px
+    max-width: 420px;
 }
 .comics img {
     width: 100%;
 }
 .text p { 
     margin: 10px auto;
-    max-width: 340px;
-
 }
 
 @media screen and (min-width: 680px) {
+    #mission {
+        max-width: 100%;
+    }
     .text p {
         max-width: 100%;
     }

@@ -4,7 +4,7 @@
         <h2>Comic Books For <br> Us, By Us</h2>
         <p>A comic book series that is written by, voted on and enjoyed by the LambDoge community.</p>
         <div class="buttons">
-            <a href="#" class="button btn-solid">
+            <a href="https://opensea.io/lambdoge" target="_blank" class="button btn-solid">
                 Read Comics
             </a>
             <a href="https://rocketswap.exchange/#/swap/con_lambdoge" target="_blank" class="button btn-outline">
@@ -21,10 +21,6 @@ export default {
 </script>
 
 <style>
-#hero {
-    width: 100%;
-    margin: 10px auto 100px;
-}
 .lambdoge-hero {
     width: 100%;
     max-width: 400px;

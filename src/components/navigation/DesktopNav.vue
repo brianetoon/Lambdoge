@@ -3,7 +3,7 @@
         <div class="nav-content">
             <img src="@/assets/images/logo.png" class="logo">
             
-            <NavLinks />
+            <NavLinks :offset="115" />
 
             <div class="icon-buttons">
                 <a href="https://t.me/lambdoge" target="_blank">

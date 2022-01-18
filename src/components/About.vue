@@ -23,9 +23,6 @@ export default {
 </script>
 
 <style>
-#about {
-    margin-bottom: 100px;
-}
 
 @media screen and (min-width: 960px) {
     #about .grid {
