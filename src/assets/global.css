@@ -29,6 +29,9 @@ body {
     background: linear-gradient(100.17deg, #F9AB34 4.57%, #FFE68E 94.51%);
     font-family: 'Montserrat', sans-serif;
 }
+header {
+    z-index: 999;
+}
 h2 {
     font-family: "GrilledCheese BTN";
     font-size: 35px;

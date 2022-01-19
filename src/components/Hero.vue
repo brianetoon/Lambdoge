@@ -48,7 +48,7 @@ export default {
     #hero .button {
         margin: 15px 10px;
     }
-    br {
+    #hero br {
         display: none;
     }
 }

@@ -26,7 +26,7 @@ export default {
             { name: 'About', anchor: '#about'},
             { name: 'Mission', anchor: '#mission'},
             { name: 'Comic & NFT', anchor: '#comic'},
-            { name: 'Tokenomics', anchor: '#tokenomics'},
+            { name: 'Tokenomics', anchor: '#tokenomics h2'},
         ])
 
         const close = () => {

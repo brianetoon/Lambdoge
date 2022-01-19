@@ -1,9 +1,11 @@
 <template>
     <main>
-        <Hero />
-        <About />
-        <Mission />
-        <Comic />
+        <div class="wrapper">
+            <Hero />
+            <About />
+            <Mission />
+            <Comic />
+        </div>
         <Tokenomics />
     </main>
 </template>
@@ -13,7 +15,7 @@ import Hero from './Hero.vue'
 import About from './About.vue'
 import Mission from './Mission.vue'
 import Comic from './Comic.vue'
-import Tokenomics from './Tokenomics.vue'
+import Tokenomics from './tokenomics/Tokenomics.vue'
 
 export default {
     components: { Hero, About, Mission, Comic, Tokenomics }
@@ -21,14 +23,21 @@ export default {
 </script>
 
 <style>
-main {
+.wrapper {
     padding: 10px 25px;
     max-width: 1160px;
     margin: 0 auto;
 }
+
 @media screen and (min-width: 680px) {
-    main {
+    .wrapper {
         padding: 20px 30px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .wrapper section {
+        margin-bottom: 160px;
     }
 }
 </style>

@@ -2,7 +2,7 @@
     <section id="comic">
         <h2>Read The Comic</h2>
         <p>Check back the first day of every month for a brand spanking new chapter!</p>
-        <img src="@/assets/images/comic_page.svg" >
+        <img src="@/assets/images/comic_page.png" >
         <p class="underline">The Origins of LambDoge</p>
         <a class="button btn-solid btn-disabled">
             Chapter 1
