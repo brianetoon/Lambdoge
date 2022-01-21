@@ -13,7 +13,8 @@
             <a href="https://opensea.io/lambdoge" target="_blank" class="button btn-solid">
                 Read Comics
             </a>
-            <a href="https://t.me/lambdoge" target="_blank" class="button btn-outline">
+            <a href="https://t.me/lambdoge" target="_blank" class="button btn-outline btn-icon">
+                <img src="@/assets/icons/telegram_red.svg" class="icon-in-btn">
                 Join the fun on Telegram
             </a>
         </div>

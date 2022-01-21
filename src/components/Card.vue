@@ -7,7 +7,8 @@
             <h3>{{ card.title }}</h3>
             <p>{{ card.details }}</p>
         </div>
-        <a :href="card.href" class="button btn-solid" target="_blank">
+        <a :href="card.href" class="button btn-solid" :class="card.button_class" target="_blank">
+            <img :src="require(`@/assets/icons/${card.button_icon}`)" v-if="card.button_icon">
             {{ card.button_text }}
         </a>
     </div>

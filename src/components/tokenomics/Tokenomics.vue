@@ -42,7 +42,7 @@ export default {
 }
 @media screen and (min-width: 960px) {
     #tokenomics {
-        padding: 100px 0;
+        padding: 120px 0;
     }
     #tokenomics .button {
         margin-top: 0;
