@@ -1,7 +1,7 @@
 <template>
     <div class="desktop-nav">
         <div class="nav-content">
-            <img src="@/assets/images/logo.png" class="logo">
+            <img src="@/assets/images/logo.svg" class="logo">
             
             <NavLinks :offset="115" />
 

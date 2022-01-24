@@ -2,7 +2,7 @@
     <section id="mission">
         <h2>Our Mission</h2>
         <div class="text">
-            <p><strong>LambDoge is a decentralized comic book series</strong> that is entirely and voted on by the community to decide on the direction of the storyline. All comics will be drawn by professional artists and then minted as NFTs.</p>
+            <p><strong>LambDoge is a decentralized comic book series</strong> that is entirely written and voted on by the community to decide on the direction of the storyline. All comics will be drawn by professional artists and then minted as NFTs.</p>
             <p>This comic can and will go anywhere our minds can take us. Strap in because it's going to be a wild ride!</p>
         </div>
         <div class="comics grid">

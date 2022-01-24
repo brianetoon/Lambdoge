@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="footer">
-            <img src="@/assets/images/logo.png" class="logo">
+            <img src="@/assets/images/logo.svg" class="logo">
             <p class="copyright">&copy; 2022 LambDoge</p>
             <div class="icon-buttons">
                 <a href="https://t.me/lambdoge" target="_blank">

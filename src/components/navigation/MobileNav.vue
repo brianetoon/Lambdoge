@@ -1,7 +1,7 @@
 <template>
     <div class="mobile-nav">
         <div class="nav-content">
-            <img src="@/assets/images/logo.png" class="logo">
+            <img src="@/assets/images/logo.svg" class="logo">
             <div class="nav-toggle">
                 <img src="@/assets/icons/close.svg" class="close"
                     @click="closeDropdown" v-if="showingDropdown">
@@ -58,7 +58,7 @@ export default {
     justify-content: flex-end;
 }
 .mobile-nav .logo {
-    width: 220px;
+    width: 225px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
